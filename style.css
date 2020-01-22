@@ -192,6 +192,9 @@ button {
     margin-left: 65px;
     vertical-align: top;  
 }
+.current {
+    border-bottom: solid 2px;
+}
 
 
 
