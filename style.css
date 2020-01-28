@@ -17,6 +17,7 @@ h3 {
     font-weight: normal;
     text-transform: uppercase;
     margin: 0;
+    color: white;
 }
 h1 {
     font-size: 4rem;
@@ -92,6 +93,12 @@ button {
     background-color: transparent;
     border-color: #ffffff;
     margin-left: 18px;   
+}
+.btn-submit {
+    padding: 13px 75px;
+    font-size: 1.3rem;
+    line-height: 2.7rem;
+    
 }
 /*----------------------------------
                SECTION HOME
@@ -195,8 +202,90 @@ button {
 .current {
     border-bottom: solid 2px;
 }
+/*--------------------------------------------
+               SECTION ONLINE-CONTROL
+--------------------------------------------*/
+.section-control {
+    margin-top: -300px;
+}
+.centered {
+    text-align: center;
+}
+.section-control h3 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
 
+.section-control-div-image {
+    margin: 30px auto 60px auto;
+    height: 434px;
+    width: 817px;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.8),rgba(3, 3, 3, 0.8)),url(img/img-control.png);
+}
+.play-button {
+    display: block;
+    position: relative;
+    top: 33%;
+}
+.section-control-div-camPicture hr,
+section-control-div-camPicture img {
+    display: inline-block;  
+}
+.section-control-textBig {
+    max-width: 681px;
+    margin: 34 auto;
+    font-size: 1.8rem;
+    line-height: 3.7rem; 
+}
 
-
-
-
+form {
+    margin-top: 90px;
+    
+}
+form label {
+    color: rgba(54, 54, 54, 0.5);
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+.form-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#GET-name, #GET-phone {
+   font-size: 1.4rem;
+    line-height: 2.3rem;
+    border: 0;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    margin-right: 68;
+}
+.checkbox-label {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    color: black;
+}
+.checkbox-label::before {
+    display: inline-block;
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #E3B873;
+    border-radius: 1px;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 8px 3px 0px 3px;
+}
+.div-with-check {
+    margin-top: 30px;
+}
+form input[type="checkbox"] {
+        display: none;
+    }
+form input[type="checkbox"]:checked+.checkbox-label::before {
+    content: url(img/checkmark.png);
+    
+    
+    
+  
+    
+}
