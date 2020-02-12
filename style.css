@@ -109,6 +109,13 @@ button {
     font-size: 1.3rem;
     line-height: 2.7rem;  
 }
+.btn-on-form {
+    margin-top: 39px;
+    margin-left: 230px;
+    padding: 15px 21px;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
 
 /*----------------------------------
                SECTION HOME
@@ -252,13 +259,15 @@ section-div-Picture img {
     line-height: 3.7rem; 
 }
 
-form {
+.request-form {
     margin-top: 90px;
     margin-bottom: 100px;
     
 }
+.request-form label {
+    color: rgba(54, 54, 54, 0.5);  
+}
 form label {
-    color: rgba(54, 54, 54, 0.5);
     font-size: 1.3rem;
     line-height: 2.1rem;
 }
@@ -274,12 +283,16 @@ form label {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
     margin-right: 68;
 }
-.checkbox-label {
+.checkbox-label-1,
+.checkbox-label-2 {
     font-size: 1.4rem;
     line-height: 2.3rem;
+}
+.checkbox-label-1 {
     color: black;
 }
-.checkbox-label::before {
+.checkbox-label-1::before,
+.checkbox-label-2::before {
     display: inline-block;
     content: '';
     width: 18px;
@@ -289,6 +302,7 @@ form label {
     margin-right: 10px;
     vertical-align: middle;
     padding: 8px 3px 0px 3px;
+    text-align: center;
 }
 .div-with-check {
     margin-top: 30px;
@@ -296,7 +310,8 @@ form label {
 form input[type="checkbox"] {
     display: none;
     }
-form input[type="checkbox"]:checked+.checkbox-label::before {
+form input[type="checkbox"]:checked+.checkbox-label-1::before,
+form input[type="checkbox"]:checked+.checkbox-label-2::before {
     content: url(img/checkmark.png);    
 }
 
@@ -358,22 +373,24 @@ form input[type="checkbox"]:checked+.checkbox-label::before {
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 }
 .section-types-of-repair-div-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 1440px;
     height: 700px;
     border: solid 1px red;
     margin: 300px auto 0 auto;
-    background: url(img/img-left-background.png);
     background-repeat: no-repeat;
     
 }
 .section-types-of-repair-div-left {
     display: inline-block;
-    width: 527px;
-    height: 539px;
-    padding-top: 90px;
+    width: 500px;
+    height: 550px;
+    padding-top: 100px;
     padding-left: 240px;
     border: solid 1px green;
-    
+    background: url(img/image%206.1.png);
 }
 .repair-feature {
     display: flex;
@@ -411,14 +428,68 @@ form input[type="checkbox"]:checked+.checkbox-label::before {
     border: solid 1px yellow;
     
 }
+
 .section-types-of-repair-form {
-    display: inline-block;
-    height: 506px;
-    width: 509px;
+    height: 450px;
+    width: 409px;
     background-color: black;
-    margin: 0;
-    
+    margin: 65px 0 0 110px;
+    padding: 28px 49px;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: white;
 }
+.form-header{
+    padding-bottom: 30px;
+}
+.section-types-of-repair-form label {
+    color: rgba(255, 255, 255, 0.5);  
+}
+#GET-name2, #GET-phone2, #GET-email {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 3px;
+    border: 0;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.15);
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+     
+}
+#GET-name2, #GET-phone2{
+    margin-bottom: 48px; 
+}
+#GET-email {
+    margin-bottom: 16px;
+}
+.div-with-check .checkbox-label-1 {
+    color: black;
+}
+ .div-with-check-2 .checkbox-label-2 {
+    color: white;
+}
+.rounded-div {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-color: #E3B873;
+    background-image: url(img/little-pig.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
 
-
- 
+}
+.note-to-pig-icon {
+    width: 244px;
+    font-size: 18px;
+    line-height: 26px;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.flex-under-form-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 38px;
+}
